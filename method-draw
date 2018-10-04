@@ -1,0 +1,60 @@
+<html>
+  <head></head>
+  <body>
+
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#ff" id="canvas_background" height="400" width="400" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" stroke="#000" id="svg_2" height="350.999985" width="345.999987" y="25.000005" x="29.000009" stroke-width="1.5" fill="#DDDDDD"/>
+  <g id="sq-colours">
+  <ellipse id="uranus" onclick="callUranus()" ry="30" rx="30" id="svg_2" cy="100" cx="85" stroke-width="1.5" stroke="#000" fill="#7AD6CA"/>
+
+  <ellipse id="neptune" onclick="callNeptune()" ry="30" rx="30" id="svg_2" cy="200" cx="85" stroke-width="1.5" stroke="#000" fill="#8e7df1"/>
+
+  <ellipse id="venus" onclick="callVenus()" ry="30" rx="30" id="svg_2" cy="300" cx="85" stroke-width="1.5" stroke="#000" fill="#C48157"/>
+
+
+
+
+  <rect stroke="#000" id="svg_11" height="289.000007" width="207" y="56.999993" x="145" stroke-opacity="null" stroke-width="1.5" fill="#EDFFFF"/>
+
+  <ellipse id="color-box" ry="30" rx="30" id="svg_2" cy="185" cx="250" stroke-width="1.5" stroke="#000" fill="#7AD6CA"/>
+
+
+
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_8" y="50" x="34" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">click a planet</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_14" y="86" x="174" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">This planet is:</text>
+
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="color-name" y="300" x="200" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">PURPLE</text>
+ </g>
+</svg>
+
+<script>
+
+function callUranus(){
+	document.getElementById('color-box').setAttribute('fill', '#7AD6CA');
+	document.getElementById('color-name').innerHTML="URANUS"
+}
+
+function callNeptune(){
+	document.getElementById('color-box').setAttribute('fill', '#8e7df1');
+	document.getElementById('color-name').innerHTML="NEPTUNE"
+}
+
+function callVenus(){
+	document.getElementById('color-box').setAttribute('fill', '#C48157');
+	document.getElementById('color-name').innerHTML="VENUS"
+}
+
+</script>
+
+</body>
+</html>
