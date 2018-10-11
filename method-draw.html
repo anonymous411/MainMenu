@@ -15,11 +15,11 @@
   <title>Layer 1</title>
   <rect id="svg_1" stroke="#000" id="svg_2" height="350.999985" width="345.999987" y="25.000005" x="29.000009" stroke-width="1.5" fill="#DDDDDD"/>
   <g id="sq-colours">
-  <ellipse id="uranus" onclick="callUranus()" ry="30" rx="30" id="svg_2" cy="100" cx="85" stroke-width="1.5" stroke="#000" fill="#7AD6CA"/>
+  <ellipse id="mars" onclick="callMars()" ry="30" rx="30" id="svg_2" cy="100" cx="85" stroke-width="1.5" stroke="#000" fill="#FF0000"/>
 
-  <ellipse id="neptune" onclick="callNeptune()" ry="30" rx="30" id="svg_2" cy="200" cx="85" stroke-width="1.5" stroke="#000" fill="#8e7df1"/>
+  <ellipse id="saturn" onclick="callSaturn()" ry="30" rx="30" id="svg_2" cy="200" cx="85" stroke-width="1.5" stroke="#000" fill="#FFC300"/>
 
-  <ellipse id="venus" onclick="callVenus()" ry="30" rx="30" id="svg_2" cy="300" cx="85" stroke-width="1.5" stroke="#000" fill="#C48157"/>
+  <ellipse id="venus" onclick="callMercury()" ry="30" rx="30" id="svg_2" cy="300" cx="85" stroke-width="1.5" stroke="#000" fill="#DACBC8"/>
 
 
 
@@ -39,18 +39,18 @@
 
 <script>
 
-function callUranus(){
-	document.getElementById('color-box').setAttribute('fill', '#7AD6CA');
+function callMars(){
+	document.getElementById('color-box').setAttribute('fill', '#FF0000');
 	document.getElementById('color-name').innerHTML="URANUS"
 }
 
-function callNeptune(){
-	document.getElementById('color-box').setAttribute('fill', '#8e7df1');
+function callSaturn(){
+	document.getElementById('color-box').setAttribute('fill', '#FFC300');
 	document.getElementById('color-name').innerHTML="NEPTUNE"
 }
 
-function callVenus(){
-	document.getElementById('color-box').setAttribute('fill', '#C48157');
+function callMercury(){
+	document.getElementById('color-box').setAttribute('fill', '#DACBC8');
 	document.getElementById('color-name').innerHTML="VENUS"
 }
 
