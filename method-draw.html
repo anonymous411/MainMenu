@@ -19,7 +19,7 @@
 
   <ellipse id="saturn" onclick="callSaturn()" ry="30" rx="30" id="svg_2" cy="200" cx="85" stroke-width="1.5" stroke="#000" fill="#FFC300"/>
 
-  <ellipse id="venus" onclick="callMercury()" ry="30" rx="30" id="svg_2" cy="300" cx="85" stroke-width="1.5" stroke="#000" fill="#DACBC8"/>
+  <ellipse id="mercury" onclick="callMercury()" ry="30" rx="30" id="svg_2" cy="300" cx="85" stroke-width="1.5" stroke="#000" fill="#DACBC8"/>
 
 
 
@@ -33,7 +33,7 @@
   <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_8" y="50" x="34" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">click a planet</text>
   <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_14" y="86" x="174" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">This planet is:</text>
 
-  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="color-name" y="300" x="200" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">CLICK A PLANET TO FIND OUT, human</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="color-name" y="300" x="200" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">CLICK A PLANET</text>
  </g>
 </svg>
 
@@ -41,17 +41,17 @@
 
 function callMars(){
 	document.getElementById('color-box').setAttribute('fill', '#FF0000');
-	document.getElementById('color-name').innerHTML="URANUS"
+	document.getElementById('color-name').innerHTML="MARS"
 }
 
 function callSaturn(){
 	document.getElementById('color-box').setAttribute('fill', '#FFC300');
-	document.getElementById('color-name').innerHTML="NEPTUNE"
+	document.getElementById('color-name').innerHTML="SATURN"
 }
 
 function callMercury(){
 	document.getElementById('color-box').setAttribute('fill', '#DACBC8');
-	document.getElementById('color-name').innerHTML="VENUS"
+	document.getElementById('color-name').innerHTML="MERCURY"
 }
 
 </script>
