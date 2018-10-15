@@ -23,17 +23,22 @@
 
 
 
-
-  <rect stroke="#000" id="svg_11" height="289.000007" width="207" y="56.999993" x="145" stroke-opacity="null" stroke-width="1.5" fill="#EDFFFF"/>
-
-  <ellipse id="color-box" ry="30" rx="30" id="svg_2" cy="185" cx="250" stroke-width="1.5" stroke="#000" fill="#7AD6CA"/>
-
-
-
   <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_8" y="50" x="34" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">click a planet</text>
-  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_14" y="86" x="174" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">This planet is:</text>
 
-  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="color-name" y="300" x="150" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">CLICK A PLANET</text>
+  <g id="info-box" fill-opacity="1" stroke-opacity="1"> == $0
+
+    <rect stroke="#000" id="svg_11" height="289.000007" width="207" y="56.999993" x="145" stroke-opacity="null" stroke-width="1.5" fill="#EDFFFF"/>
+
+    <ellipse id="color-box" ry="30" rx="30" id="svg_2" cy="185" cx="250" stroke-width="1.5" stroke="#000" fill="#7AD6CA"/>
+
+    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_14" y="86" x="174" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">This planet is:</text>
+
+    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="color-name" y="300" x="150" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">CLICK A PLANET</text>
+
+
+  <a href="#">
+    <text onclick="closeBox()" xml:space="preserve" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" id="color-name" y="75" x="340" stroke-opacity="null" stroke-width="0" stroke="#aa0000" fill="#aa0000" >x</text> ==
+  </a>
  </g>
 </svg>
 
@@ -41,19 +46,29 @@
 
 function callMars(){
 	document.getElementById('color-box').setAttribute('fill', '#FF0000');
-	document.getElementById('color-name').innerHTML="MARS"
+	document.getElementById('color-name').innerHTML="MARS";
+  document.getElementById('info-box').setAttribute('fill-opacity', '1');
+  document.getElementById('info-box').setAttribute('stroke-opacity', '1');
 }
 
 function callSaturn(){
 	document.getElementById('color-box').setAttribute('fill', '#FFC300');
-	document.getElementById('color-name').innerHTML="SATURN"
+	document.getElementById('color-name').innerHTML="SATURN";
+  document.getElementById('info-box').setAttribute('fill-opacity', '1');
+  document.getElementById('info-box').setAttribute('stroke-opacity', '1');
 }
 
 function callMercury(){
-	document.getElementById('color-box').setAttribute('fill', '#DACBC8');
-	document.getElementById('color-name').innerHTML="MERCURY"
-}
+	document.getElementById('color-box').setAttribute('fill-opacity',  '#DACBC8');
+	document.getElementById('color-name').innerHTML="MERCURY";
+  document.getElementById('info-box').setAttribute('fill-opacity', '1');
+  document.getElementById('info-box').setAttribute('stroke-opacity', '1');
 
+}
+function closeBox(){
+  document.getElementById('info-box').setAttribute('fill-opacity', '0');
+  document.getElementById('info-box').setAttribute('stroke-opacity', '0');
+}
 </script>
 
 </body>
