@@ -1,8 +1,8 @@
 # MainMenu
 ### Graceus Schexnayder
 
-### PROGRAMS
 # Links
+### PROGRAMS
 ### [Course Description](https://anonymous411.github.io/Course-Description.md/)
 This is a basic description on what this course is all about.
 ### [Syllabus](https://anonymous411.github.io/Syllabus.md/)
